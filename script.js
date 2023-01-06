@@ -14,8 +14,8 @@
     let corretcAns = 0;
 
     //the questions and the answer place on the window
-    const preguntas = ["que?","como?","cuando?","cual?","donde?","somos?","soy?","eres?","enserio?","for real?"];
-    const respuestas  = ["que","como","cuando","cual","donde","somos","soy","eres","enserio","for real"];
+    const preguntas = ["What is the pronunciation of this vowel 'ㅏ'?","What is the pronunciation of this vowel 'ㅑ'?","What is the pronunciation of this vowel 'ㅓ'?","What is the pronunciation of this vowel 'ㅕ'?","What is the pronunciation of this vowel 'ㅗ'?","What is the pronunciation of this vowel 'ㅛ'?","What is the pronunciation of this vowel 'ㅜ'?","What is the pronunciation of this vowel 'ㅠ'?","What is the pronunciation of this vowel 'ㅡ'?","What is the pronunciation of this vowel 'ㅣ'?"];
+    const respuestas  = ["[a]","[ya]","[eo]","[yeo]","[o]","[yo]","[u]","[yu]","[eu]",  "[i]"];
 
 
     window.addEventListener("load",function(){
