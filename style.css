@@ -1,0 +1,132 @@
+@media screen and (max-width: 420px) {
+  body {
+    background: #e6f9ff;
+    font-family: "Fredoka One", cursive;
+  }
+
+  .bg-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    margin: 10% auto;
+    font-size: 30px;
+    max-width: 75%;
+  }
+
+  .board {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-bottom: 100%;
+    border-radius: 32px;
+    background: #ffffff;
+    margin-bottom: 10%;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bg-question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .q {
+    position: absolute;
+    top: 24%;
+    max-width: 75%;
+  }
+
+  .buttons {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 34%;
+    width: 80%;
+  }
+
+  .button-1 {
+    background: #d9d9d9;
+    padding: 10%;
+    width: 80%;
+    margin-bottom: 5%;
+    border-radius: 39px;
+    border: none;
+    outline: none;
+    font-family: "Fredoka One", cursive;
+    transition: 0.5s all;
+  }
+
+  .button-2 {
+    background: #d9d9d9;
+    padding: 10%;
+    width: 80%;
+    margin-bottom: 5%;
+    border-radius: 39px;
+    border: none;
+    outline: none;
+    font-family: "Fredoka One", cursive;
+    transition: 0.5s all;
+  }
+
+  .button-3 {
+    background: #d9d9d9;
+    padding: 10%;
+    width: 80%;
+    margin-bottom: 5%;
+    border-radius: 39px;
+    border: none;
+    outline: none;
+    font-family: "Fredoka One", cursive;
+    transition: 0.5s all;
+  }
+
+  .button-4 {
+    background: #d9d9d9;
+    padding: 10%;
+    width: 80%;
+    margin-bottom: 5%;
+    border-radius: 39px;
+    border: none;
+    outline: none;
+    font-family: "Fredoka One", cursive;
+    transition: 0.5s all;
+  }
+
+  .button-1:hover,
+  .button-2:hover,
+  .button-3:hover,
+  .button-4:hover {
+    background: #7e7e7e;
+  }
+
+  .footer {
+    background: url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+
+    color: #e6f9ff;
+  }
+
+  .firma {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
