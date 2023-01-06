@@ -45,7 +45,7 @@
 
   .q {
     position: absolute;
-    top: 24%;
+    top: 26%;
     max-width: 75%;
   }
 
@@ -118,15 +118,15 @@
     background-position: center;
     padding-top: 20%;
     padding-bottom: 20%;
-
-    color: #e6f9ff;
   }
 
   .firma {
+    text-decoration: none;
     display: flex;
     margin: auto;
     text-align: center;
     justify-content: center;
     align-items: center;
+    color: #e6f9ff;
   }
 }
