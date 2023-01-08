@@ -16,24 +16,22 @@
   }
 
   .board {
-    display: flex;
+    z-index: -1;
+    display: block;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    padding-bottom: 100%;
+    padding-bottom: 5%;
     border-radius: 32px;
     background: #ffffff;
     margin-bottom: 10%;
   }
 
   .content {
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .bg-question {
@@ -44,17 +42,28 @@
   }
 
   .q {
-    position: absolute;
-    top: 26%;
+    margin: 10% auto;
+    display: block;
+    z-index: 1;
     max-width: 75%;
   }
 
   .buttons {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    top: 36%;
+    display: block;
+    margin: 10% auto;
     width: 80%;
+  }
+
+  .startButton {
+    margin-top: 20%;
+    background: #d9d9d9;
+    padding: 10%;
+    width: 80%;
+    border-radius: 39px;
+    border: none;
+    outline: none;
+    font-family: "Fredoka One", cursive;
+    transition: 0.5s all;
   }
 
   .button-1 {
@@ -105,6 +114,7 @@
     transition: 0.5s all;
   }
 
+  .startButton:hover,
   .button-1:hover,
   .button-2:hover,
   .button-3:hover,
@@ -113,11 +123,15 @@
   }
 
   .footer {
+    display: block;
     background: url(img/bg.jpg);
     background-size: cover;
     background-position: center;
     padding-top: 20%;
     padding-bottom: 20%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
   }
 
   .firma {

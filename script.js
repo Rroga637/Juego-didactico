@@ -4,9 +4,6 @@
     let noIndice4 = 0;
     let indexes = [noIndice1,noIndice2,noIndice3,noIndice4];
 
-    let buttonTwo = document.querySelector(".button-2");
-    let buttonThree = document.querySelector(".button-3");
-    let buttonFour = document.querySelector(".button-4");
     let buttons = [".button-1",".button-2",".button-3",".button-4"];
     
     let indexQuestion = [question1 = 0,question2 = 0,question3 = 0,question4 = 0,question5 = 0];
@@ -19,30 +16,46 @@
 
 
     window.addEventListener("load",function(){
+            document.querySelector(".bg-question").style.display = "none";
+            document.querySelector(".button-1").style.display = "none";
+            document.querySelector(".button-2").style.display = "none";
+            document.querySelector(".button-3").style.display = "none";
+            document.querySelector(".button-4").style.display = "none";
 
         corretcAns = Math.round(Math.random()*3);
         indexQuestion[auxilar] = Math.round(Math.random()*9);
         newPeregunta(indexQuestion[auxilar]);
         random();
 
+        //the start button duhh
+        document.querySelector(".startButton").addEventListener("click", start );
 
          //here the fouth functions of the buttons clicks themself
         document.querySelector(".button-1").addEventListener("click", function() {
             clickButton(".button-1", indexQuestion[auxilar], 0)
-        })
+        });
 
         document.querySelector(".button-2").addEventListener("click", function() {
             clickButton(".button-2", indexQuestion[auxilar], 1)
-        })
+        });
         
         document.querySelector(".button-3").addEventListener("click", function() {
             clickButton(".button-3", indexQuestion[auxilar], 2)
-        })
+        });
 
         document.querySelector(".button-4").addEventListener("click", function() {
             clickButton(".button-4", indexQuestion[auxilar], 3)
-        })
+        });
     })
+
+    function start() {
+
+            document.querySelector(".bg-question").style.display = "inline";
+            document.querySelector(".button-1").style.display = "inline";
+            document.querySelector(".button-2").style.display = "inline";
+            document.querySelector(".button-3").style.display = "inline";
+            document.querySelector(".button-4").style.display = "inline";
+    }
 
     //function of the click on button
         function clickButton(name, numeroPregunta, numberIndex) {
@@ -141,6 +154,7 @@
             }else{
                 alert("se acabaron las preguntas wey")
             }
+
 
         }
 
