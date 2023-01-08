@@ -4,6 +4,12 @@
     let noIndice4 = 0;
     let indexes = [noIndice1,noIndice2,noIndice3,noIndice4];
 
+
+    let StartButton = document.querySelector(".startButton");
+    let buttonOne = document.querySelector(".button-1");
+    let buttonTwo = document.querySelector(".button-2");
+    let buttonThree = document.querySelector(".button-3");
+    let buttonFour = document.querySelector(".button-4");
     let buttons = [".button-1",".button-2",".button-3",".button-4"];
     
     let indexQuestion = [question1 = 0,question2 = 0,question3 = 0,question4 = 0,question5 = 0];
@@ -17,10 +23,10 @@
 
     window.addEventListener("load",function(){
             document.querySelector(".bg-question").style.display = "none";
-            document.querySelector(".button-1").style.display = "none";
-            document.querySelector(".button-2").style.display = "none";
-            document.querySelector(".button-3").style.display = "none";
-            document.querySelector(".button-4").style.display = "none";
+            buttonOne.style.display = "none";
+            buttonTwo.style.display = "none";
+            buttonThree.style.display = "none";
+            buttonFour.style.display = "none";
 
         corretcAns = Math.round(Math.random()*3);
         indexQuestion[auxilar] = Math.round(Math.random()*9);
@@ -49,12 +55,12 @@
     })
 
     function start() {
-
+            StartButton.style.display = "none";
             document.querySelector(".bg-question").style.display = "inline";
-            document.querySelector(".button-1").style.display = "inline";
-            document.querySelector(".button-2").style.display = "inline";
-            document.querySelector(".button-3").style.display = "inline";
-            document.querySelector(".button-4").style.display = "inline";
+            buttonOne.style.display = "inline";
+            buttonTwo.style.display = "inline";
+            buttonThree.style.display = "inline";
+            buttonFour.style.display = "inline";
     }
 
     //function of the click on button
@@ -118,10 +124,10 @@
         }
 
         function resetBackground() {
-            document.querySelector(".button-1").style.background = "#d9d9d9";
-            document.querySelector(".button-2").style.background = "#d9d9d9";
-            document.querySelector(".button-3").style.background = "#d9d9d9";
-            document.querySelector(".button-4").style.background = "#d9d9d9";
+            buttonOne.style.background = "#d9d9d9";
+            buttonTwo.style.background = "#d9d9d9";
+            buttonThree.style.background = "#d9d9d9";
+            buttonFour.style.background = "#d9d9d9";
 
         }
 
