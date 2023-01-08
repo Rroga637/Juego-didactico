@@ -146,9 +146,10 @@
             if(auxilar <= 4){
                 indexQuestion[auxilar] = Math.round(Math.random()*9);
 
-                while(indexQuestion[auxilar] == indexQuestion[auxilar]-1){
-                    indexQuestion[auxilar] = Math.round(Math.random()*9);
-                }
+                for(let i = (auxilar-1); i>=0; i--){
+                    if(indexQuestion[auxilar] == indexQuestion[i]){
+                        indexQuestion[auxilar] = Math.round(Math.random()*9);
+                }}
     
                 newPeregunta(indexQuestion[auxilar]);
                 Button1(indexQuestion[auxilar]);
