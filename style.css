@@ -46,6 +46,10 @@
     max-width: 75%;
   }
 
+  .endgame {
+    font-size: 1.5em;
+  }
+
   .buttons {
     display: block;
     margin: 10% auto;
@@ -117,6 +121,37 @@
   .button-3:hover,
   .button-4:hover {
     background: #7e7e7e;
+  }
+
+  .points {
+    margin: 5% 0;
+  }
+
+  .timerest {
+    margin: 8% 0 10% 0;
+  }
+
+  .informationText {
+    display: flex;
+    text-align: center;
+    justify-items: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .strikes {
+    text-align: center;
+  }
+
+  .error1,
+  .error2,
+  .error3 {
+    padding: 1%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #7e7e7e;
+    transition: all 0.5s ease-in-out;
   }
 
   .footer {
