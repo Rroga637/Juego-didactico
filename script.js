@@ -129,7 +129,12 @@
         }
 
        //function of the click on button
-        function clickButton(name, numeroPregunta, numberIndex) {
+        function clickButton(name, numeroPregunta, numberIndex){ 
+        buttonOne.disabled = true;
+        buttonTwo.disabled = true;
+        buttonThree.disabled = true;
+        buttonFour.disabled = true;
+        setTimeout(enableButtons,1500);
             if(indexes[numberIndex] == numeroPregunta){
                 document.querySelector(name).style.background = "green";
                 setTimeout(resetBackground, 1000);
@@ -186,6 +191,15 @@
             document.querySelector(".button-4").textContent = respuestas[noIndice4];
 
         }
+
+        function enableButtons() {
+
+        buttonOne.disabled = false;
+        buttonTwo.disabled = false;
+        buttonThree.disabled = false;
+        buttonFour.disabled = false;
+        
+    }
 
         //actualizes the points in live view
         function setpoints() {

@@ -54,6 +54,7 @@
     display: block;
     margin: 10% auto;
     width: 80%;
+    z-index: -1;
   }
 
   .startButton {
@@ -137,10 +138,13 @@
     justify-items: auto;
     align-items: center;
     justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .strikes {
     text-align: center;
+    margin: 10% 0;
   }
 
   .error1,
@@ -163,7 +167,7 @@
     padding-top: 20%;
     padding-bottom: 20%;
     position: absolute;
-    top: 100%;
+    top: 120%;
     width: 100%;
   }
 
