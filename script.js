@@ -247,7 +247,7 @@
             numberQuestions.splice((indexQuestion[auxilar]),1);
             auxilar++;
             corretcAns = Math.round(Math.random()*3);
-            if(auxilar <= 4){
+            if(points <= 4){
                 indexQuestion[auxilar] = Math.round(Math.random()*(numberQuestions.length-1));
 
     
