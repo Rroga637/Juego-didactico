@@ -1,3 +1,165 @@
+body {
+  background: #e6f9ff;
+  font-family: "Fredoka One", cursive;
+}
+
+.bg-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  margin: 5% auto;
+  font-size: 30px;
+  max-width: 75%;
+}
+.board {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 5% 0;
+  border-radius: 32px;
+  background: #ffffff;
+  margin-bottom: 4%;
+  max-width: 940px;
+}
+
+.content {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bg-question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.q {
+  margin: 5% auto;
+  display: block;
+  max-width: 75%;
+}
+
+.endgame {
+  font-size: 1.5em;
+}
+
+.buttons {
+  display: inline-grid;
+  grid-template-columns: 320px 320px;
+  gap: 3px;
+
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.startButton {
+  background: #d9d9d9;
+  padding: 3%;
+  justify-self: center;
+  width: 40%;
+  border-radius: 39px;
+  border: none;
+  outline: none;
+  font-family: "Fredoka One", cursive;
+  transition: 0.5s all;
+}
+
+.button-1,
+.button-2,
+.button-3,
+.button-4 {
+  background: #d9d9d9;
+  padding: 10%;
+
+  width: 80%;
+  margin-bottom: 5%;
+  border-radius: 39px;
+  border: none;
+  outline: none;
+  font-family: "Fredoka One", cursive;
+  transition: 0.5s all;
+}
+
+.startButton:hover,
+.button-1:hover,
+.button-2:hover,
+.button-3:hover,
+.button-4:hover {
+  background: #7e7e7e;
+}
+
+.points {
+  margin: 2% 0;
+}
+
+.informationText {
+  display: flex;
+  text-align: center;
+  justify-items: auto;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.strikes {
+  text-align: center;
+  margin: 2% 0;
+}
+
+.error1,
+.error2,
+.error3 {
+  padding: 1%;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background-color: #7e7e7e;
+  transition: all 0.5s ease-in-out;
+}
+
+.footer {
+  display: block;
+  background: url(img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 20%;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  position: absolute;
+  top: 120%;
+  width: 100%;
+}
+
+.firma {
+  text-decoration: none;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #e6f9ff;
+}
+
 @media screen and (max-width: 420px) {
   body {
     background: #e6f9ff;
@@ -68,42 +230,9 @@
     transition: 0.5s all;
   }
 
-  .button-1 {
-    background: #d9d9d9;
-    padding: 10%;
-    width: 80%;
-    margin-bottom: 5%;
-    border-radius: 39px;
-    border: none;
-    outline: none;
-    font-family: "Fredoka One", cursive;
-    transition: 0.5s all;
-  }
-
-  .button-2 {
-    background: #d9d9d9;
-    padding: 10%;
-    width: 80%;
-    margin-bottom: 5%;
-    border-radius: 39px;
-    border: none;
-    outline: none;
-    font-family: "Fredoka One", cursive;
-    transition: 0.5s all;
-  }
-
-  .button-3 {
-    background: #d9d9d9;
-    padding: 10%;
-    width: 80%;
-    margin-bottom: 5%;
-    border-radius: 39px;
-    border: none;
-    outline: none;
-    font-family: "Fredoka One", cursive;
-    transition: 0.5s all;
-  }
-
+  .button-1,
+  .button-2,
+  .button-3,
   .button-4 {
     background: #d9d9d9;
     padding: 10%;

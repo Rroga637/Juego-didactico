@@ -218,7 +218,7 @@
                 error3.style.background = "red"; 
                 error3.style.padding = "1.4%";
                 stopTimer();
-                endGame();
+                setTimeout(endGame,1000);
             }
         }
 
@@ -243,11 +243,14 @@
 
         //this function do the same thing than the last one but no take the same question than before
         function fase2() {
-
+            //we eliminate the number used before
             numberQuestions.splice((indexQuestion[auxilar]),1);
             auxilar++;
             corretcAns = Math.round(Math.random()*3);
             if(points <= 4){
+                //now we randomize the index of the array so no matter what number is next logicly they just show what's inside
+
+                //it's less one becouse they are say 10 numbers but only 9 indexes 0 to nine are 10 numbers duh
                 indexQuestion[auxilar] = Math.round(Math.random()*(numberQuestions.length-1));
 
     
@@ -268,7 +271,7 @@
         function winGame() {
 
             endGameText.textContent = "You Win!!!"
-            endGameText.style.display = "inline";
+            endGameText.style.display = "block";
             document.querySelector(".q").style.display = "none";
             timer.style.display = "none";
             buttonOne.style.display = "none";
@@ -283,7 +286,7 @@
         //end the game
         function endGame() {
 
-            endGameText.style.display = "inline";
+            endGameText.style.display = "block";
             document.querySelector(".q").style.display = "none";
             timer.style.display = "none";
             buttonOne.style.display = "none";
